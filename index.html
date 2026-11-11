@@ -1,11 +1,25 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Колесо сомнительных решений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <div class="carnival">
   <div class="curtain curtain-left"></div>
   <div class="curtain curtain-right"></div>
 
   <header class="header">
-    <div class="eyebrow">ТЕАТР СОМНИТЕЛЬНОЙ СУДЬБЫ ПРЕДСТАВЛЯЕТ</div>
+    <div class="eyebrow">
+      ТЕАТР СОМНИТЕЛЬНОЙ СУДЬБЫ ПРЕДСТАВЛЯЕТ
+    </div>
+
     <h1>КОЛЕСО<br>СОМНИТЕЛЬНЫХ РЕШЕНИЙ</h1>
+
     <p class="subtitle">
       Когда здравый смысл взял больничный.
     </p>
@@ -16,8 +30,16 @@
       <div class="wheel-frame">
         <div class="lights" id="lights"></div>
         <div class="pointer"></div>
-        <canvas id="wheel" width="800" height="800"></canvas>
-        <div class="wheel-center">СУДЬБА<br>РЕШИЛА</div>
+
+        <canvas
+          id="wheel"
+          width="800"
+          height="800">
+        </canvas>
+
+        <div class="wheel-center">
+          СУДЬБА<br>РЕШИЛА
+        </div>
       </div>
     </div>
 
@@ -26,14 +48,23 @@
         Комиссия готова испортить тебе жизнь.
       </div>
 
-      <button id="spin-button" class="spin-button">
+      <button
+        id="spin-button"
+        class="spin-button"
+        type="button">
         ДОВЕРИТЬСЯ СУДЬБЕ
       </button>
 
       <div class="result-card hidden" id="result-card">
-        <div class="result-label">ОФИЦИАЛЬНОЕ ПОСТАНОВЛЕНИЕ № 666</div>
+        <div class="result-label">
+          ОФИЦИАЛЬНОЕ ПОСТАНОВЛЕНИЕ № 666
+        </div>
+
         <div class="result-text" id="result-text"></div>
-        <div class="result-stamp">ОБЖАЛОВАНИЮ НЕ ПОДЛЕЖИТ</div>
+
+        <div class="result-stamp">
+          ОБЖАЛОВАНИЮ НЕ ПОДЛЕЖИТ
+        </div>
       </div>
 
       <p class="disclaimer">
@@ -44,9 +75,19 @@
   </main>
 
   <div class="confetti-container" id="confetti"></div>
-  <div class="announcement hidden" id="announcement"></div>
+
+  <div
+    class="announcement hidden"
+    id="announcement">
+  </div>
 
   <footer>
-    СОМНИТЕЛЬНЫЕ РЕШЕНИЯ С 2026 ГОДА · ВСЕ ПРАВА ПЕРЕДАНЫ ГУСЮ
+    СОМНИТЕЛЬНЫЕ РЕШЕНИЯ С 2026 ГОДА ·
+    ВСЕ ПРАВА ПЕРЕДАНЫ ГУСЮ
   </footer>
 </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
